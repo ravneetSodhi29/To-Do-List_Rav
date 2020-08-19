@@ -1,0 +1,10 @@
+<div *ngFor="let item of items">
+    <span><input type="checkbox" [(ngModel)]="item.isCompleted" (change)="updateStatus(item)" />
+        <p *ngIf="item.isCompleted"><s>{{item.name}}</s></p>
+        <p *ngIf="!item.isCompleted">{{item.name}}</p>
+
+        <button type="button" [disabled]="isItemDisabled(item)" (click)="deleteItem(item)" *ngIf="item.isCompleted"><i
+                class="fa fa-trash" aria-hidden="true" title="Delete"></i>
+            <i class="fa fa-user fa-5x"></i></button>
+    </span>
+</div>

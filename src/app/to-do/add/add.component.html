@@ -1,0 +1,4 @@
+<div>
+    <input [(ngModel)]="item.name" />
+    <button type="button" (click)="add(item)" [disabled]="isItemDisabled(item)">Click</button>
+</div>

@@ -1,0 +1,6 @@
+<button (click)="clearItems()">Clear Items</button>
+<br />
+<todo-list [items]="items" (itemUpdated)="updateItem($event)" (itemDeleted)="deleteItem($event)"></todo-list>
+<br />
+
+<todo-add (itemAdded)="addItem($event)"></todo-add>
