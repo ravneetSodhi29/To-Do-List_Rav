@@ -29,6 +29,7 @@
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
     "firebase-tools": "^8.4.3",
     "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^4.3.0",
