@@ -8,7 +8,8 @@
     "build:prod": "npm run build:clean && ngc && npm run webpack-prod && npm run build:clean",
     "build:clean": "del-cli 'src/**/*.js' 'src/**/*.js.map' 'src/**/*.ngsummary.json' 'src/**/*.metadata.json' 'src/**/**/*.ngfactory.ts' 'src/**/*.ngstyle.ts' 'src/**/*.shim.ts'",
     "serve": "http-server -o",
-    "pwa": "ng build --prod && sw-precache --root=dist"
+    "pwa": "ng build --prod && sw-precache --root=dist",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
@@ -24,11 +25,11 @@
     "@angular/router": "~10.0.2",
     "@angular/service-worker": "~10.0.2",
     "@ngtools/webpack": "^10.0.6",
-    "angular-font-awesome": "^3.1.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
+    "firebase-tools": "^8.4.3",
     "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^4.3.0",
     "http-server": "^0.12.3",
